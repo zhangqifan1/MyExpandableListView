@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/message_list_content"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/send_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="发送给"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/receiver_users"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80px"
+            android:editable="false"
+            android:focusable="false" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/btn__layout"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="85px"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:groupIndicator="@null" >
+    </ExpandableListView>
+
+</LinearLayout>
